@@ -1,0 +1,259 @@
+body {
+	background-color: #000; /* Black background */
+	color: #fff; /* White text */
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+  }
+  
+  p {
+	line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+	background-color: #ffc107; /* Yellow background */
+	color: #000; /* Black text */
+	padding: 24px 58px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  h1 {
+	font-size: 64px;
+  }
+  .para{
+	font-size: 28px;
+	margin: 32px 0;
+  }
+  nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .logo {
+	font-size: 24px;
+	font-weight: bold;
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav li {
+	display: inline-block;
+	margin: 0 10px;
+  }
+  .il {
+	flex:2;
+  }
+  .ir {
+	flex:1;
+  }
+  
+  nav a {
+	color: #000;
+	text-decoration: none;
+  }
+  
+  /* Content */
+  .content {
+	padding: 20px 0;
+  }
+  
+  .landing-page {
+	text-align: center;
+  }
+  
+  .contact-form {
+	margin:140px 0px;
+    
+  }
+	.contact-form h2{
+      font-size:64px;
+      color:#FCAF02;
+}
+
+
+  
+  .submit {
+	background-color: #ffc107; /* Yellow button */
+	color: #000; /* Black text */
+	padding: 16px 20px;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+    width:25%;
+    max-width:320px;
+    min-width:180px;
+    font-weight:bold;
+    font-size:18px;
+    text-align:center;
+    align-self:center;
+  }
+  .btn {
+	width: 280px;
+	display: block;
+	padding: 14px;
+    background: #FCAF02;
+	text-align: center;
+	border-radius: 40px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 32px;
+    color:#000;
+  }
+form{
+  margin-top:64px;
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+  
+}
+.input-item{
+  border-radius:40px;
+  background:transparent;
+  border:1px solid #FCAF02;
+  outline:none;
+  padding:20px 24px;
+  font-size:22px;
+	box-sizing:border-box;
+  
+}
+.input-item.full{
+  display:block;
+ width:100%;
+}
+ .half{
+  display:flex;
+   gap:40px;
+ 
+}
+.half .input-item{
+  flex:1;
+}
+
+
+
+  
+  /* Startup list */
+  .startup-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+  }
+  section{
+	margin: 58px;
+  }
+  
+  .startup-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+  }
+  .intro {
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+  }
+  
+  .startup-table th, .startup-table td {
+	padding: 10px;
+	border: 1px solid #fff;
+	text-align: left;
+  }
+  
+  /* Yellow background for table header */
+  .startup-table th {
+	background-color: #ffc107;
+  }
+  
+  /* Image */
+  .image {
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  
+  .image img {
+	max-width: 100%;
+	height: auto;
+  }
+
+.table{
+  border-collapse:collapse;
+  width:100%;
+  
+  border: 1px solid #ffc107;  
+}
+ thead{
+  border: 1px solid #ffc107;
+}
+tfoot td{
+  background:#ffc107;
+}
+td,th{
+  padding:40px;
+  color: #ffc107;
+  text-align:left;
+}
+.row_no{
+  border-right:  1px solid #ffc107;
+  text-align:center;
+}
+ .row_name{
+   border-right:  1px solid #ffc107;
+}
+tfoot .row_no{
+   border-right:  1px solid #000;
+}
+tfoot .row_name{
+   border-right:  1px solid #000;
+}
+tfoot td{
+  color:black;
+}
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+	nav ul {
+	  display: block;
+	  text-align: center;
+	}
+  
+	nav li {
+	  display: block;
+	  margin: 5px 0;
+	}
+  
+	.contact-form {
+	  flex-direction: column;
+	}
+  
+	.contact-form input {
+	  width: 100%;
+	}
+  
+	.startup-table {
+	  display: block;
+	}
+  
+	.startup-table th, .startup-table td {
+	  display: block;
+	  width: 100%;
+	}
+  }
